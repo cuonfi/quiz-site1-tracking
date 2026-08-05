@@ -1,0 +1,19 @@
+# Dev/test artifacts (not for production)
+dev-server.js
+node_modules/
+_vercel/
+.DS_Store
+Thumbs.db
+
+# Ripper metadata from downloaded pages
+_ripper-info.json
+
+# Original MP3 copy in root (kept locally, not in repo)
+Pesquisa TikTok.mp3
+
+# External cached assets (optional — uncomment to ignore)
+
+.vercel
+.env*
+
+.vercel

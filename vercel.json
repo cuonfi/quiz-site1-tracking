@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/generate_qr_gateway.js", "use": "@vercel/node" },
+    { "src": "api/payment-status.js", "use": "@vercel/node" },
+    { "src": "api/geoip.js", "use": "@vercel/node" },
+    { "src": "**/*", "use": "@vercel/static" }
+  ],
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/generate_qr_gateway", "destination": "/api/generate_qr_gateway.js" },
+    { "source": "/api/payment-status", "destination": "/api/payment-status.js" },
+    { "source": "/api/geoip", "destination": "/api/geoip.js" }
+  ]
+}
